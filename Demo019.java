@@ -1,21 +1,16 @@
 public class Demo019 {
-    public static void printFibonacciSeries(int n) {
-        int firstTerm = 0, secondTerm = 1;
-        
-        System.out.println("Fibonacci Series till " + n + " terms:");
+    public static void main(String[] args) {
+        int num1 = 1;
+        int num2 = 2;
+        int sum = 0;
 
-        for (int i = 1; i <= n; ++i) {
-            System.out.print(firstTerm + " ");
+        System.out.print("Fibonacci Sequence: " + num1 + ", " + num2);
 
-            // Compute the next term
-            int nextTerm = firstTerm + secondTerm;
-            firstTerm = secondTerm;
-            secondTerm = nextTerm;
+        for (int i = 3; i <= 10; i++) {
+            sum = num1 + num2;
+            num1 = num2;
+            num2 = sum;
+            System.out.print(", " + sum);
         }
-    }
-        public static void main(String[] args) {
-            int n = 10; // Number of terms in the Fibonacci series
-            printFibonacciSeries(n);
-        
     }
 }
