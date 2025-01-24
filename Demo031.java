@@ -1,11 +1,11 @@
-//Demo031.java Hash Set - Collections
+
 import java.util.HashSet;
 class HashSetDemo1 {
 	void HSetMethod() {
 		//We can add any type of element here...
 		HashSet hashSet = new HashSet();
 		hashSet.add(100);
-		hashSet.add("Yashwanth");
+		hashSet.add("Rohith");
 		hashSet.add(9999.99);
 		System.out.println(hashSet);
 //we can use Object class to read any type of elements
