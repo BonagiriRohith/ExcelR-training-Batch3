@@ -1,38 +1,24 @@
+//Demo031.java Hash Set - Collections
 import java.util.HashSet;
-import java.util.Scanner;
+class HashSetDemo1 {
+	void HSetMethod() {
+		//We can add any type of element here...
+		HashSet hashSet = new HashSet();
+		hashSet.add(100);
+		hashSet.add("Yashwanth");
+		hashSet.add(9999.99);
+		System.out.println(hashSet);
+//we can use Object class to read any type of elements
+		for(Object x: hashSet) {
+			System.out.println(x);
+		}
+	}
+}
+
 
 public class Demo031 {
-    public static void main(String[] args) {
-        HashSet<Object> students = new HashSet<>();
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter student's name: ");
-        String name = scanner.nextLine();
-        students.add(name);
-
-        System.out.print("Enter student's roll number: ");
-        int rollNumber = scanner.nextInt();
-        students.add(rollNumber);
-
-        System.out.print("Enter student's address: ");
-        scanner.nextLine();
-        String address = scanner.nextLine();
-        students.add(address);
-
-        scanner.close();
-
-        System.out.println("Student Information:");
-        for (Object student : students) {
-            if (student instanceof String) {
-                if (((String) student).matches("[a-zA-Z ]+")) {
-                    System.out.println("Name: " + student);
-                } else {
-                    System.out.println("Address: " + student);
-                }
-            } else if (student instanceof Integer) {
-                System.out.println("Roll Number: " + student);
-            }
-        }
-    }
-}
+	public static void main(String[] args) {
+		HashSetDemo1 obj = new HashSetDemo1();
+		obj.HSetMethod();
+		}
+	}
